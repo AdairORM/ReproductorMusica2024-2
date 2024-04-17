@@ -19,10 +19,10 @@ namespace ReproductorMusica2024_2
         //Canciones agregadas opr hardCode
         private void CancionesDefault()
         {
-            canciones.Add(new Cancion("My demons","Starset","Trasnsmissions"));
-            canciones.Add(new Cancion("Time is runnin out", "Muse", "Absolution"));
-            canciones.Add(new Cancion("Keep driving", "Harry Styles", "Harrys House"));
-            canciones.Add(new Cancion("Presidente Maynez", "Yuawi", "Presidente Maynez"));
+            canciones.Add(new Cancion("My demons","Starset","Trasnsmissions","00:03:00"));
+            canciones.Add(new Cancion("Time is runnin out", "Muse", "Absolution", "00:03:00"));
+            canciones.Add(new Cancion("Keep driving", "Harry Styles", "Harrys House", "00:03:00"));
+            canciones.Add(new Cancion("Presidente Maynez", "Yuawi", "Presidente Maynez", "00:03:00"));
 
         }
 
@@ -51,6 +51,7 @@ namespace ReproductorMusica2024_2
             lbTitulo.Text = miCancion.Titulo;
             lbArtista.Text = miCancion.Artista;
             lbAlbum.Text = miCancion.Album;
+            lbDuracionCancion.Text = miCancion.Duracion;
         }
 
         private void agregarCanciónToolStripMenuItem_Click(object sender, EventArgs e)

@@ -37,7 +37,7 @@
             this.lbAlbum = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbDuracionCancion = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -155,16 +155,16 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "00:00";
             // 
-            // label8
+            // lbDuracionCancion
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.ForeColor = System.Drawing.Color.Lime;
-            this.label8.Location = new System.Drawing.Point(838, 343);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "1 [min]";
+            this.lbDuracionCancion.AutoSize = true;
+            this.lbDuracionCancion.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbDuracionCancion.ForeColor = System.Drawing.Color.Lime;
+            this.lbDuracionCancion.Location = new System.Drawing.Point(838, 343);
+            this.lbDuracionCancion.Name = "lbDuracionCancion";
+            this.lbDuracionCancion.Size = new System.Drawing.Size(38, 13);
+            this.lbDuracionCancion.TabIndex = 4;
+            this.lbDuracionCancion.Text = "1 [min]";
             // 
             // menuStrip1
             // 
@@ -254,7 +254,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1014, 487);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lbDuracionCancion);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.lbAlbum);
@@ -286,7 +286,7 @@
         private System.Windows.Forms.Label lbAlbum;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbDuracionCancion;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cargarDefaultToolStripMenuItem;

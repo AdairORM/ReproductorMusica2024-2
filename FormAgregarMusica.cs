@@ -15,7 +15,7 @@ namespace ReproductorMusica2024_2
 
         private void btnaAgregar_Click(object sender, EventArgs e)
         {
-            EnviarCancion(new Cancion(txtbTitulo.Text,txtbArtista.Text,txtbAlbum.Text));
+            EnviarCancion(new Cancion(txtbTitulo.Text,txtbArtista.Text,txtbAlbum.Text,txtbDuracion.Text));
         }
     }
 }
