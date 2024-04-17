@@ -41,13 +41,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.reproducciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pausaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarCanciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,8 +65,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Menu;
             this.label1.Location = new System.Drawing.Point(348, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 24);
@@ -75,8 +77,9 @@
             // lbTitulo
             // 
             this.lbTitulo.AutoSize = true;
-            this.lbTitulo.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbTitulo.BackColor = System.Drawing.Color.Black;
             this.lbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitulo.ForeColor = System.Drawing.SystemColors.Menu;
             this.lbTitulo.Location = new System.Drawing.Point(451, 149);
             this.lbTitulo.Name = "lbTitulo";
             this.lbTitulo.Size = new System.Drawing.Size(177, 24);
@@ -86,8 +89,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Menu;
             this.label3.Location = new System.Drawing.Point(348, 197);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 24);
@@ -97,8 +101,9 @@
             // lbArtista
             // 
             this.lbArtista.AutoSize = true;
-            this.lbArtista.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbArtista.BackColor = System.Drawing.Color.Black;
             this.lbArtista.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbArtista.ForeColor = System.Drawing.SystemColors.Menu;
             this.lbArtista.Location = new System.Drawing.Point(451, 197);
             this.lbArtista.Name = "lbArtista";
             this.lbArtista.Size = new System.Drawing.Size(61, 24);
@@ -108,8 +113,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Menu;
             this.label5.Location = new System.Drawing.Point(348, 248);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 24);
@@ -119,8 +125,9 @@
             // lbAlbum
             // 
             this.lbAlbum.AutoSize = true;
-            this.lbAlbum.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbAlbum.BackColor = System.Drawing.Color.Black;
             this.lbAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAlbum.ForeColor = System.Drawing.SystemColors.Menu;
             this.lbAlbum.Location = new System.Drawing.Point(451, 248);
             this.lbAlbum.Name = "lbAlbum";
             this.lbAlbum.Size = new System.Drawing.Size(177, 24);
@@ -140,7 +147,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.ForeColor = System.Drawing.Color.Lime;
             this.label7.Location = new System.Drawing.Point(296, 343);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 13);
@@ -150,7 +158,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.ForeColor = System.Drawing.Color.Lime;
             this.label8.Location = new System.Drawing.Point(838, 343);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 13);
@@ -171,6 +180,7 @@
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarCanciónToolStripMenuItem,
             this.cargarDefaultToolStripMenuItem,
             this.toolStripMenuItem1,
             this.abrirToolStripMenuItem,
@@ -186,6 +196,11 @@
             this.cargarDefaultToolStripMenuItem.Text = "Cargar Default";
             this.cargarDefaultToolStripMenuItem.Click += new System.EventHandler(this.cargarDefaultToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
@@ -197,11 +212,6 @@
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
             this.guardarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // reproducciónToolStripMenuItem
             // 
@@ -216,20 +226,27 @@
             // playToolStripMenuItem
             // 
             this.playToolStripMenuItem.Name = "playToolStripMenuItem";
-            this.playToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.playToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.playToolStripMenuItem.Text = "Play";
             // 
             // stopToolStripMenuItem
             // 
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.stopToolStripMenuItem.Text = "Stop";
             // 
             // pausaToolStripMenuItem
             // 
             this.pausaToolStripMenuItem.Name = "pausaToolStripMenuItem";
-            this.pausaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pausaToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.pausaToolStripMenuItem.Text = "Pausa";
+            // 
+            // agregarCanciónToolStripMenuItem
+            // 
+            this.agregarCanciónToolStripMenuItem.Name = "agregarCanciónToolStripMenuItem";
+            this.agregarCanciónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarCanciónToolStripMenuItem.Text = "Agregar Canción";
+            this.agregarCanciónToolStripMenuItem.Click += new System.EventHandler(this.agregarCanciónToolStripMenuItem_Click);
             // 
             // FormReproductor
             // 
@@ -280,6 +297,7 @@
         private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pausaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarCanciónToolStripMenuItem;
     }
 }
 

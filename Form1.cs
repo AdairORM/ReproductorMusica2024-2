@@ -15,6 +15,7 @@ namespace ReproductorMusica2024_2
             canciones = new ArrayList();
         }
 
+        #region Métodos
         //Canciones agregadas opr hardCode
         private void CancionesDefault()
         {
@@ -25,6 +26,15 @@ namespace ReproductorMusica2024_2
 
         }
 
+        internal void AgregarCancion(Cancion cancion)
+        {
+            canciones.Add(cancion);
+            lstbCanciones.Items.Add(cancion.Titulo);
+        }
+
+        #endregion
+
+        #region Manejadores de eventos
         private void cargarDefaultToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CancionesDefault();
@@ -42,5 +52,15 @@ namespace ReproductorMusica2024_2
             lbArtista.Text = miCancion.Artista;
             lbAlbum.Text = miCancion.Album;
         }
+
+        private void agregarCanciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAgregarMusica formAgregar = new FormAgregarMusica();
+            formAgregar.EnviarCancion += AgregarCancion;
+            formAgregar.ShowDialog();
+        }
+        #endregion
+
+
     }
 }
