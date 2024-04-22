@@ -15,7 +15,14 @@ namespace ReproductorMusica2024_2
 
         private void btnaAgregar_Click(object sender, EventArgs e)
         {
-            EnviarCancion(new Cancion(txtbTitulo.Text,txtbArtista.Text,txtbAlbum.Text,txtbDuracion.Text));
+            int duracion;
+            bool esNumero = int.TryParse(txtbDuracion.Text, out duracion);
+            EnviarCancion(new Cancion(txtbTitulo.Text,txtbArtista.Text,txtbAlbum.Text, duracion));
+            txtbAlbum.Clear();
+            txtbTitulo.Clear();
+            txtbArtista.Clear();
+            txtbAlbum.Clear();
+
         }
     }
 }

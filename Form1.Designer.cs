@@ -40,6 +40,7 @@
             this.lbDuracionCancion = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarCanciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,6 @@
             this.playToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pausaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarCanciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,28 +189,35 @@
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // agregarCanciónToolStripMenuItem
+            // 
+            this.agregarCanciónToolStripMenuItem.Name = "agregarCanciónToolStripMenuItem";
+            this.agregarCanciónToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.agregarCanciónToolStripMenuItem.Text = "Agregar Canción";
+            this.agregarCanciónToolStripMenuItem.Click += new System.EventHandler(this.agregarCanciónToolStripMenuItem_Click);
+            // 
             // cargarDefaultToolStripMenuItem
             // 
             this.cargarDefaultToolStripMenuItem.Name = "cargarDefaultToolStripMenuItem";
-            this.cargarDefaultToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cargarDefaultToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.cargarDefaultToolStripMenuItem.Text = "Cargar Default";
             this.cargarDefaultToolStripMenuItem.Click += new System.EventHandler(this.cargarDefaultToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(160, 6);
             // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // guardarToolStripMenuItem
             // 
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
             // 
             // reproducciónToolStripMenuItem
@@ -240,13 +247,6 @@
             this.pausaToolStripMenuItem.Name = "pausaToolStripMenuItem";
             this.pausaToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.pausaToolStripMenuItem.Text = "Pausa";
-            // 
-            // agregarCanciónToolStripMenuItem
-            // 
-            this.agregarCanciónToolStripMenuItem.Name = "agregarCanciónToolStripMenuItem";
-            this.agregarCanciónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.agregarCanciónToolStripMenuItem.Text = "Agregar Canción";
-            this.agregarCanciónToolStripMenuItem.Click += new System.EventHandler(this.agregarCanciónToolStripMenuItem_Click);
             // 
             // FormReproductor
             // 
